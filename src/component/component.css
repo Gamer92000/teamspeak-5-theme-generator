@@ -1,0 +1,38 @@
+.component {
+  --width: 200px;
+  
+  color: #fff;
+  box-sizing: border-box;
+  user-select: none;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  width: calc(var(--width) + 20px);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.component.selected {
+  background-color: hsla(150, 70%, 45%, 1);
+  color: #000;
+}
+
+.component img {
+  border-radius: 10px;
+  width: var(--width);
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+.component h1 {
+  font-size: 1.3rem;
+  white-space: nowrap;
+  max-width: var(--width);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.component p {
+  max-width: var(--width);
+}

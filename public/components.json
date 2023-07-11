@@ -1,0 +1,40 @@
+{
+  "components": [
+    {
+      "name": "You are my Star.",
+      "description": "Replaces the favorite marker with a star.",
+      "imagePath": "/pictures/star.png",
+      "css": ".tsv-icon-contact-status-favorite, .tsv-icon-chat-room-status-favorite {\n z-index: 10;\n left: 13px !important;\n top: 4px !important;\n stroke: rgba(0,0,0,.7);\n stroke-width: 1.3px;\n transform: scale(.61);\n}\n\n.tsv-view-banner :is(.tsv-icon-contact-status-favorite, .tsv-icon-chat-room-status-favorite) {\n transform: scale(.4);\n left: 30px !important;\n top: 15px !important;\n}\n\n.tsv-icon-contact-status-favorite rect, .tsv-icon-chat-room-status-favorite rect {\n display: none;\n}\n\n.tsv-icon-contact-status-favorite path, .tsv-icon-chat-room-status-favorite path {\n /* d: path('M19.4,13.5 21.4,17.6 25.9,18.2 22.7,21.4 23.4,25.9 19.4,23.8 15.4,25.9 16.2,21.4 12.9,18.2 17.4,17.6z') !important; */\n d: path('m 11.566084,-4e-7 3.002256,8.02905 8.563828,0.3742 L 16.423837,13.73968 18.714317,22 11.566084,17.26904 4.4178507,22 6.7083312,13.73968 0,8.4032496 l 8.5638277,-0.3742 z') !important;\n fill: orange;\n}"
+    },
+    {
+      "name": "I hate People.",
+      "description": "Hides the discover button.",
+      "imagePath": "/pictures/no_discover.png",
+      "css": "div:has(> div.ts-sidebar-tab-sub-panel-accessory svg[name=\"discover\"]) {\ndisplay: none;\n}"
+    },
+    {
+      "name": "Is this the Middle?",
+      "description": "Centers channel banners in the server tree.",
+      "imagePath": "/pictures/center_banner.png",
+      "css": ".ts-server-tree-item-background-image img, .ts-server-tree-item-background-image-full img {\n left: 50% !important;\n transform: translate(-50%, 0);\n -webkit-mask-image: linear-gradient(90deg, transparent 0px, #000 var(--tsv-padding-h-large), #000 calc(100% - var(--tsv-padding-h-large)), transparent);\n}"
+    },
+    {
+      "name": "Why a Background‽",
+      "description": "Removes the blurry background from images in the chat.",
+      "imagePath": "/pictures/no_background.png",
+      "css": ".ts-chat-message-attachment-myts-file-background {\n display: none;\n}\n\n.ts-chat-message-attachment .ts-chat-message-attachment-inner .ts-chat-message-attachment-image .display {\n width: 100%;\n height: 100%;\n}"
+    },
+    {
+      "name": "No more Hexes.",
+      "description": "Removes the hexagon background from all the corners of the client.",
+      "imagePath": "/pictures/no_hexes.png",
+      "css": ".ts-background-hexes-container {\n display: none\n}"
+    },
+    {
+      "name": "Scale Images.",
+      "description": "Makes images in the chat scale to fit their aspect ratio.",
+      "imagePath": "/pictures/scale_images.png",
+      "css": ".ts-chat-message-attachment-myts-file.isImage {\n height: unset !important;\n}\n \n.ts-chat-message-attachment .ts-chat-message-attachment-inner .ts-chat-message-attachment-image {\n height: unset !important;\n}"
+    }
+  ]
+}
