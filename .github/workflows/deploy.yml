@@ -1,0 +1,28 @@
+name: Deploy Theme Generator to gh-pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build_test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install dependencies
+        uses: pnpm/action-setup@v2
+        with:
+          version: latest
+          run_install: |
+            - recursive: true
+              args: [--frozen-lockfile, --strict-peer-dependencies]
+            - args: [--global, gulp, prettier]
+      - name: Compile
+        run: pnpm build
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          publish_dir: ./build
