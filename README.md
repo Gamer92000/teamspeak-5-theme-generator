@@ -1,6 +1,6 @@
 <div align="center">
   <h1>TeamSpeak 5 Theme Generator</h1>
-  <img src="thumbnail.png" width="80%">
+  <img src=".github/thumbnail.png" width="80%">
 </div>
 
 ## Usage
