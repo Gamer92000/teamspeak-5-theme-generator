@@ -56,7 +56,7 @@
     },
     {
       "name": "Streamer Privacy.",
-      "description": "Blurs server names and connection info, so you'll alone with your thoughts.",
+      "description": "Blurs server names and connection info, so you'll be alone with your thoughts.",
       "imagePath": "/pictures/privacy.png",
       "css": ".tsv-activity-group-list > li.tsv-item .tsv-text-truncate,\n.tsv-activity-group-list > li li:first-child .tsv-text-truncate,\n.tsv-header-bar-below-tools:has(svg[name=bookmark]) .tsv-text-truncate,\n.tsv-server-info-footer p:first-child,\n.tsv-header-floating:has(+* .tsv-server-info-footer) .tsv-text-truncate,\n.tsv-dashboard-widget-content:has(.tsv-icon-server-connect) .tsv-text-truncate,\n.ts-sidebar-overlay-header-channel-servername {\n filter: blur(6px);\n transition: .3s ease all;\n}\n\n.tsv-activity-group-list > li.tsv-item .tsv-text-truncate:hover,\n.tsv-activity-group-list > li li:first-child .tsv-text-truncate:hover,\n.tsv-header-bar-below-tools:has(svg[name=bookmark]) .tsv-text-truncate:hover,\n.tsv-server-info-footer p:first-child:hover,\n.tsv-header-floating:has(+* .tsv-server-info-footer) .tsv-text-truncate:hover,\n.tsv-dashboard-widget-content:has(.tsv-icon-server-connect) .tsv-text-truncate:hover,\n.ts-sidebar-overlay-header-channel-servername:hover {\n filter: blur(0px);\n}"
     },
