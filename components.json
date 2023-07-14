@@ -34,7 +34,7 @@
       "name": "Scale Images.",
       "description": "Makes images in the chat scale to fit their aspect ratio, so you can finally see them.",
       "imagePath": "/pictures/scale_images.png",
-      "css": ".ts-chat-message-attachment-myts-file.isImage {\n height: unset !important;\n}\n \n.ts-chat-message-attachment .ts-chat-message-attachment-inner .ts-chat-message-attachment-image {\n height: unset !important;\n}"
+      "css": ".ts-chat-message-attachment-myts-file.isImage {\n height: unset !important;\n}\n\n.ts-chat-message-attachment .ts-chat-message-attachment-inner .ts-chat-message-attachment-image {\n height: unset !important;\n}"
     },
     {
       "name": "I hate people.",
@@ -53,6 +53,18 @@
       "description": "Hides the groups, so you are not influenced by the crowds.",
       "imagePath": "/pictures/no_groups.png",
       "css": ".tsv-tabs:has(.tsv-bar-item.tsv-tab-item-active svg[name=groups]) + .tsv-resize-area .tsv-resize-area-container {\n display: none;\n} \n\n.tsv-tabs:has(.tsv-bar-item.tsv-tab-item-active svg[name=groups]) + .tsv-resize-area:after {\n width: 100%;\n display: block;\n content: \"You shall not be moved,\\A By the voices of the crowd!\\A You shall not be lost,\\A In the chaos of the loud!\" attr(title);\n padding: 5px 15px;\n white-space: pre-wrap;\n}"
+    },
+    {
+      "name": "Streamer Privacy.",
+      "description": "Blurs server names and connection info, so you'll alone with your thoughts.",
+      "imagePath": "/pictures/privacy.png",
+      "css": ".tsv-activity-group-list > li.tsv-item .tsv-text-truncate,\n.tsv-activity-group-list > li li:first-child .tsv-text-truncate,\n.tsv-header-bar-below-tools:has(svg[name=bookmark]) .tsv-text-truncate,\n.tsv-server-info-footer p:first-child,\n.tsv-header-floating:has(+* .tsv-server-info-footer) .tsv-text-truncate,\n.tsv-dashboard-widget-content:has(.tsv-icon-server-connect) .tsv-text-truncate,\n.ts-sidebar-overlay-header-channel-servername {\n filter: blur(6px);\n transition: .3s ease all;\n}\n\n.tsv-activity-group-list > li.tsv-item .tsv-text-truncate:hover,\n.tsv-activity-group-list > li li:first-child .tsv-text-truncate:hover,\n.tsv-header-bar-below-tools:has(svg[name=bookmark]) .tsv-text-truncate:hover,\n.tsv-server-info-footer p:first-child:hover,\n.tsv-header-floating:has(+* .tsv-server-info-footer) .tsv-text-truncate:hover,\n.tsv-dashboard-widget-content:has(.tsv-icon-server-connect) .tsv-text-truncate:hover,\n.ts-sidebar-overlay-header-channel-servername:hover {\n filter: blur(0px);\n}"
+    },
+    {
+      "name": "What are changes?",
+      "description": "Blurs the changelog, so you don't accidentally leak the alpha changes again...",
+      "imagePath": "/pictures/no_changelog.png",
+      "css": ".tsv-dashboard-widget-content:has(.tsv-changelog-selectable) {\n filter: blur(6px);\n transition: .3s ease all;\n}\n\n.tsv-dashboard-widget-content:has(.tsv-changelog-selectable):hover {\n filter: blur(0px);\n}"
     }
   ]
 }
