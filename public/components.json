@@ -65,6 +65,12 @@
       "description": "Blurs the changelog, so you don't accidentally leak the alpha changes again...",
       "imagePath": "/pictures/no_changelog.png",
       "css": ".tsv-dashboard-widget-content:has(.tsv-changelog-selectable) {\n filter: blur(6px);\n transition: .3s ease all;\n}\n\n.tsv-dashboard-widget-content:has(.tsv-changelog-selectable):hover {\n filter: blur(0px);\n}"
+    },
+    {
+      "name": "Chat Indent.",
+      "description": "Indents chats in the activities to distinguish them from servers.",
+      "imagePath": "/pictures/chat_indent.png",
+      "css": ".tsv-activity-group-list > li li:not(:first-child) {\n padding-left: calc(var(--tsv-padding-h) + 10px);\n}"
     }
   ]
 }
