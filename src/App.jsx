@@ -6,10 +6,10 @@ import './App.css';
 
 const packageJson = `
 {
-  "name": "ThemeBuilder",
+  "name": "ThemeBuilder <id>",
   "description": "Customized TeamSpeak Theme",
   "version": "1.0.0",
-  "identifier": "de.julianimhof.custom",
+  "identifier": "de.julianimhof.custom.<id>",
   "engines": {
     "teamspeak": 1
   },
@@ -55,10 +55,17 @@ const App = () => {
       });
   }, []);
 
-  const exportTheme = () => { 
+  const exportTheme = () => {
+    const searchParams = new URLSearchParams(window.location.search);
+    if (!searchParams.get('selection') || searchParams.get('selection') === "0") {
+      alert("Please select at least one component!");
+      return;
+    }
+    const sel = searchParams.get('selection').split('').map(a => String.fromCharCode(97+ (+a))).join("");
     const zip = new JSZip();
-    const folder = zip.folder("de.julianimhof.custom")
-    folder.file("package.json", packageJson);
+    const folder = zip.folder(`de.julianimhof.custom.${sel}`);
+    const packageJsonWithId = packageJson.replaceAll("<id>", sel);
+    folder.file("package.json", packageJsonWithId);
     folder.file("custom.png", customPng, { base64: true });
     let customCss = "";
     componentList.forEach((component, i) => {
@@ -69,7 +76,7 @@ const App = () => {
     folder.file("custom.css", customCss);
     zip.generateAsync({ type: "blob" })
       .then(content => {
-        saveAs(content, "de.julianimhof.custom.zip");
+        saveAs(content, `de.julianimhof.custom.${sel}.zip`);
       }
     );
   }
@@ -84,8 +91,9 @@ const App = () => {
       </div>
       <div className="componentList">
         {componentList.map((component, index) =>
-          <div key={index}>
+          <div key={component.id}>
             <Component
+              id={component.id}
               name={component.name}
               description={component.description}
               imagePath={process.env.PUBLIC_URL + component.imagePath}
