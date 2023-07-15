@@ -1,72 +1,84 @@
 {
   "components": [
     {
+      "id": 0,
       "name": "You are my Star.",
       "description": "Replaces the favorite marker with a star. Just as it was intended.",
       "imagePath": "/pictures/star.png",
       "css": ".tsv-icon-contact-status-favorite, .tsv-icon-chat-room-status-favorite {\n z-index: 10;\n left: 13px !important;\n top: 4px !important;\n stroke: rgba(0,0,0,.7);\n stroke-width: 1.3px;\n transform: scale(.61);\n}\n\n.tsv-view-banner :is(.tsv-icon-contact-status-favorite, .tsv-icon-chat-room-status-favorite) {\n transform: scale(.4);\n left: 30px !important;\n top: 15px !important;\n}\n\n.tsv-icon-contact-status-favorite rect, .tsv-icon-chat-room-status-favorite rect {\n display: none;\n}\n\n.tsv-icon-contact-status-favorite path, .tsv-icon-chat-room-status-favorite path {\n /* d: path('M19.4,13.5 21.4,17.6 25.9,18.2 22.7,21.4 23.4,25.9 19.4,23.8 15.4,25.9 16.2,21.4 12.9,18.2 17.4,17.6z') !important; */\n d: path('m 11.566084,-4e-7 3.002256,8.02905 8.563828,0.3742 L 16.423837,13.73968 18.714317,22 11.566084,17.26904 4.4178507,22 6.7083312,13.73968 0,8.4032496 l 8.5638277,-0.3742 z') !important;\n fill: orange;\n}"
     },
     {
+      "id": 1,
       "name": "I am shy.",
       "description": "Hides the discover button so you don't need to meet new people.",
       "imagePath": "/pictures/no_discover.png",
       "css": "div:has(> div.ts-sidebar-tab-sub-panel-accessory svg[name=\"discover\"]) {\ndisplay: none;\n}"
     },
     {
+      "id": 2,
       "name": "Is this the Middle?",
       "description": "Centers channel banners in the server tree. Just like in the good old days!",
       "imagePath": "/pictures/center_banner.png",
       "css": ".ts-server-tree-item-background-image img, .ts-server-tree-item-background-image-full img {\n left: 50% !important;\n transform: translate(-50%, 0);\n -webkit-mask-image: linear-gradient(90deg, transparent 0px, #000 var(--tsv-padding-h-large), #000 calc(100% - var(--tsv-padding-h-large)), transparent);\n}"
     },
     {
+      "id": 3,
       "name": "Why a Background‽",
       "description": "Removes the blurry background from images in the chat.",
       "imagePath": "/pictures/no_background.png",
       "css": ".ts-chat-message-attachment-myts-file-background {\n display: none;\n}\n\n.ts-chat-message-attachment .ts-chat-message-attachment-inner .ts-chat-message-attachment-image .display {\n width: 100%;\n height: 100%;\n}"
     },
     {
+      "id": 4,
       "name": "No more Hexes.",
       "description": "Removes the hexagon background from all the corners of the client.",
       "imagePath": "/pictures/no_hexes.png",
       "css": ".ts-background-hexes-container {\n display: none\n}"
     },
     {
+      "id": 5,
       "name": "Scale Images.",
       "description": "Makes images in the chat scale to fit their aspect ratio, so you can finally see them.",
       "imagePath": "/pictures/scale_images.png",
       "css": ".ts-chat-message-attachment-myts-file.isImage {\n height: unset !important;\n}\n\n.ts-chat-message-attachment .ts-chat-message-attachment-inner .ts-chat-message-attachment-image {\n height: unset !important;\n}"
     },
     {
+      "id": 6,
       "name": "I hate people.",
       "description": "Hides the user list, so you don't have to see people or their messages.",
       "imagePath": "/pictures/no_user_list.png",
       "css": ".tsv-tabs:has(.tsv-bar-item.tsv-tab-item-active svg[name=contacts]) + .tsv-resize-area .tsv-resize-area-container {\n display: none;\n} \n\n.tsv-tabs:has(.tsv-bar-item.tsv-tab-item-active svg[name=contacts]) + .tsv-resize-area:after {\n width: 100%;\n display: block;\n content: \"You shall not be lured,\\A By humans or things!\\A You shall not be fooled,\\A By what the world brings!\" attr(title);\n padding: 5px 15px;\n white-space: pre-wrap;\n}"
     },
     {
+      "id": 7,
       "name": "Mute and Deaf.",
       "description": "Hides the bookmarks, so you are not tempted to connect to a server.",
       "imagePath": "/pictures/no_bookmarks.png",
       "css": ".tsv-tabs:has(.tsv-bar-item.tsv-tab-item-active svg[name=bookmarks]) + .tsv-resize-area .tsv-resize-area-container {\n display: none;\n} \n\n.tsv-tabs:has(.tsv-bar-item.tsv-tab-item-active svg[name=bookmarks]) + .tsv-resize-area:after {\n width: 100%;\n display: block;\n content: \"You shall not hear,\\A You shall not speak,\\A You shall not see,\\A You shall not seek!\" attr(title);\n padding: 5px 15px;\n white-space: pre-wrap;\n}"
     },
     {
+      "id": 8,
       "name": "Loneliness.",
       "description": "Hides the groups, so you are not influenced by the crowds.",
       "imagePath": "/pictures/no_groups.png",
       "css": ".tsv-tabs:has(.tsv-bar-item.tsv-tab-item-active svg[name=groups]) + .tsv-resize-area .tsv-resize-area-container {\n display: none;\n} \n\n.tsv-tabs:has(.tsv-bar-item.tsv-tab-item-active svg[name=groups]) + .tsv-resize-area:after {\n width: 100%;\n display: block;\n content: \"You shall not be moved,\\A By the voices of the crowd!\\A You shall not be lost,\\A In the chaos of the loud!\" attr(title);\n padding: 5px 15px;\n white-space: pre-wrap;\n}"
     },
     {
+      "id": 9,
       "name": "Streamer Privacy.",
       "description": "Blurs server names and connection info, so you'll be alone with your thoughts.",
       "imagePath": "/pictures/privacy.png",
       "css": ".tsv-activity-group-list > li.tsv-item .tsv-text-truncate,\n.tsv-activity-group-list > li li:first-child .tsv-text-truncate,\n.tsv-header-bar-below-tools:has(svg[name=bookmark]) .tsv-text-truncate,\n.tsv-server-info-footer p:first-child,\n.tsv-header-floating:has(+* .tsv-server-info-footer) .tsv-text-truncate,\n.tsv-dashboard-widget-content:has(.tsv-icon-server-connect) .tsv-text-truncate,\n.ts-sidebar-overlay-header-channel-servername {\n filter: blur(6px);\n transition: .3s ease all;\n}\n\n.tsv-activity-group-list > li.tsv-item .tsv-text-truncate:hover,\n.tsv-activity-group-list > li li:first-child .tsv-text-truncate:hover,\n.tsv-header-bar-below-tools:has(svg[name=bookmark]) .tsv-text-truncate:hover,\n.tsv-server-info-footer p:first-child:hover,\n.tsv-header-floating:has(+* .tsv-server-info-footer) .tsv-text-truncate:hover,\n.tsv-dashboard-widget-content:has(.tsv-icon-server-connect) .tsv-text-truncate:hover,\n.ts-sidebar-overlay-header-channel-servername:hover {\n filter: blur(0px);\n}"
     },
     {
+      "id": 10,
       "name": "What are changes?",
       "description": "Blurs the changelog, so you don't accidentally leak the alpha changes again...",
       "imagePath": "/pictures/no_changelog.png",
       "css": ".tsv-dashboard-widget-content:has(.tsv-changelog-selectable) {\n filter: blur(6px);\n transition: .3s ease all;\n}\n\n.tsv-dashboard-widget-content:has(.tsv-changelog-selectable):hover {\n filter: blur(0px);\n}"
     },
     {
+      "id": 11,
       "name": "Chat Indent.",
       "description": "Indents chats in the activities to distinguish them from servers.",
       "imagePath": "/pictures/chat_indent.png",
