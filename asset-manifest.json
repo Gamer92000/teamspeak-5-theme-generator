@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/teamspeak-5-theme-generator/static/css/main.73fe6611.css",
-    "main.js": "/teamspeak-5-theme-generator/static/js/main.172ca51a.js",
+    "main.css": "/teamspeak-5-theme-generator/static/css/main.ff7a9dae.css",
+    "main.js": "/teamspeak-5-theme-generator/static/js/main.51c68549.js",
     "index.html": "/teamspeak-5-theme-generator/index.html",
-    "main.73fe6611.css.map": "/teamspeak-5-theme-generator/static/css/main.73fe6611.css.map",
-    "main.172ca51a.js.map": "/teamspeak-5-theme-generator/static/js/main.172ca51a.js.map"
+    "main.ff7a9dae.css.map": "/teamspeak-5-theme-generator/static/css/main.ff7a9dae.css.map",
+    "main.51c68549.js.map": "/teamspeak-5-theme-generator/static/js/main.51c68549.js.map"
   },
   "entrypoints": [
-    "static/css/main.73fe6611.css",
-    "static/js/main.172ca51a.js"
+    "static/css/main.ff7a9dae.css",
+    "static/js/main.51c68549.js"
   ]
 }
