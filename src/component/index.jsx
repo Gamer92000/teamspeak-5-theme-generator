@@ -1,5 +1,5 @@
-import { useState } from 'react';
 import './component.css';
+import { useComponents } from '../App';
 
 const Component = (
   {
@@ -10,21 +10,19 @@ const Component = (
     setValue,
   }
 ) => { 
-  const searchParams = new URLSearchParams(window.location.search);
-
-  let initial = false;
-  if (searchParams.get('selection')) { 
-    initial = !!(searchParams.get('selection') & (1 << id));
-    setValue(initial);
-  }
-
-  const [selected, setSelected] = useState(initial);
+  const selected = useComponents(state => state.componentValues)[id];
 
   const handleClick = () => {
     setValue(!selected);
-    setSelected(!selected);
     const searchParams = new URLSearchParams(window.location.search);
-    searchParams.set('selection', (searchParams.get('selection') & ~(1 << id)) | (selected ? 0 : 1 << id));
+    let selection = (searchParams.get('selection') || "").split('-');
+    selection = selection.filter(id => id !== '').map(id => parseInt(id));
+    selection = selection.filter(cid => cid !== id);
+    if (!selected) {
+      selection.push(id);
+    }
+    selection = selection.sort((a, b) => a - b);
+    searchParams.set('selection', selection.join('-'));
     window.history.replaceState({}, '', `${window.location.pathname}?${searchParams}`);
   }
 

@@ -11,6 +11,7 @@
   width: calc(var(--width) + 20px);
   overflow: hidden;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .component.selected {

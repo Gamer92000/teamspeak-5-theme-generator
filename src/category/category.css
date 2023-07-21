@@ -1,0 +1,21 @@
+.categoryList {
+  justify-self: center;
+  max-width: 1200px;
+}
+
+.categoryList h2 {
+  user-select: none;
+  cursor: pointer;
+}
+
+.componentList {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: baseline;
+  height: auto;
+  overflow: hidden;
+}
+
+.componentList.collapsed {
+  height: 0;
+}

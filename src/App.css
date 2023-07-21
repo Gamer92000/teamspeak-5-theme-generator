@@ -5,9 +5,12 @@
 }
 
 .header {
+  height: 85px;
+  overflow: hidden;
   margin: 0 20px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header button {
@@ -21,6 +24,30 @@
   border-radius: 5px;
 }
 
+@media (max-width: 819px) {
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .header button {
+    font-size: 1rem;
+  }
+
+  #sidebar-wrapper {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .header h1 {
+    font-size: 1rem;
+  }
+
+  .header button {
+    padding: 5px 10px;
+  }
+}
+
 .header button:hover {
   cursor: pointer;
   background-color: hsla(35, 90%, 45%, 1);
@@ -30,11 +57,11 @@
   background-color: hsla(35, 90%, 40%, 1);
 }
 
-.componentList {
+.contentContainer {
   height: 100%;
-  display: flex;
   overflow: auto;
-  flex-wrap: wrap;
+  padding: 0 50px;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  align-content: baseline;
 }

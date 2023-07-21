@@ -1,0 +1,28 @@
+#sidebar-wrapper {
+  position: relative;
+  margin-left: 50px;
+  min-width: 190px;
+}
+
+#sidebar {
+  position: fixed;
+  height: calc(100vh - 126px);
+  overflow: auto;
+  width: 190px;
+  background: rgb(31, 38, 55);
+  padding: 10px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+}
+
+#sidebar h2 {
+  margin: 10px 0;
+}
+
+#sidebar p {
+  margin: 0;
+  overflow: auto;
+}
