@@ -127,6 +127,14 @@
       "imagePath": "/pictures/overlaynt.png",
       "category": 0,
       "css": ".tsv-sidebar {\n background: var(--tsv-shaded-bg);\n}\n\n.ts-servertree-sidebar-overlay {\n position: initial;\n}"
+    },
+    {
+      "id": 16,
+      "name": "Unemotional",
+      "description": "Removes the reactions from messages, so you won't be bothered with 🥓 reactions.",
+      "imagePath": "/pictures/unemotional.png",
+      "category": 0,
+      "css": ".ts-reactions {\n display: none;\n}"
     }
   ],
   "categories": [
