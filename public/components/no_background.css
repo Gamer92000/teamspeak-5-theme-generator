@@ -1,0 +1,11 @@
+.ts-chat-message-attachment-myts-file-background {
+  display: none;
+}
+
+.ts-chat-message-attachment
+  .ts-chat-message-attachment-inner
+  .ts-chat-message-attachment-image
+  .display {
+  width: 100%;
+  height: 100%;
+}

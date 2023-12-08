@@ -4,9 +4,9 @@
   "homepage": "https://Gamer92000.github.io/teamspeak-5-theme-generator",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
+    "@testing-library/jest-dom": "^6.1.5",
+    "@testing-library/react": "^14.1.2",
+    "@testing-library/user-event": "^14.5.1",
     "buffer": "^6.0.3",
     "file-saver": "^2.0.5",
     "jszip": "^3.10.1",
@@ -14,8 +14,8 @@
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
     "superfasthash": "github:mjethani/superfasthash",
-    "web-vitals": "^2.1.4",
-    "zustand": "^4.3.9"
+    "web-vitals": "^3.5.0",
+    "zustand": "^4.4.7"
   },
   "scripts": {
     "predeploy": "pnpm run build",

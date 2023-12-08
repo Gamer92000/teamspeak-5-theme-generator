@@ -1,0 +1,21 @@
+.tsv-activity-group-list > li.tsv-item .tsv-text-truncate,
+.tsv-activity-group-list > li li:first-child .tsv-text-truncate,
+.tsv-header-bar-below-tools:has(svg[name="bookmark"]) .tsv-text-truncate,
+.tsv-server-info-footer p:first-child,
+.tsv-header-floating:has(+ * .tsv-server-info-footer) .tsv-text-truncate,
+.tsv-dashboard-widget-content:has(.tsv-icon-server-connect) .tsv-text-truncate,
+.ts-sidebar-overlay-header-channel-servername {
+  filter: blur(6px);
+  transition: 0.3s ease all;
+}
+
+.tsv-activity-group-list > li.tsv-item .tsv-text-truncate:hover,
+.tsv-activity-group-list > li li:first-child .tsv-text-truncate:hover,
+.tsv-header-bar-below-tools:has(svg[name="bookmark"]) .tsv-text-truncate:hover,
+.tsv-server-info-footer p:first-child:hover,
+.tsv-header-floating:has(+ * .tsv-server-info-footer) .tsv-text-truncate:hover,
+.tsv-dashboard-widget-content:has(.tsv-icon-server-connect)
+  .tsv-text-truncate:hover,
+.ts-sidebar-overlay-header-channel-servername:hover {
+  filter: blur(0px);
+}

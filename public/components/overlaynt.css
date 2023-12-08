@@ -1,0 +1,7 @@
+.tsv-sidebar {
+  background: var(--tsv-shaded-bg);
+}
+
+.ts-servertree-sidebar-overlay {
+  position: initial;
+}

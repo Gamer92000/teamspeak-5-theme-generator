@@ -71,12 +71,36 @@ const ExportButton = () => {
     folder.file("package.json", packageJsonWithId);
     folder.file("custom.png", customPng, { base64: true });
     let customCss = "";
-    componentList.forEach(component => {
-      if (componentValues[component.id]) {
-        customCss += `/* ${component.name} */\n${component.css}\n\n`;
+    await Promise.all(componentList.map(async component => {
+      if (!componentValues[component.id]) {
+        return;
       }
-    });
+      // fetch the css from the component
+      let css_uri = component.css;
+      await fetch(process.env.PUBLIC_URL + css_uri).then(response => response.text()).then(text => {
+        customCss += `/* ${component.name} */\n${text}\n\n`;
+      }).catch(err => {
+        console.error(err);
+      });
+    }));
     folder.file("custom.css", customCss);
+    // get all resources
+    await Promise.all(componentList.map(async component => {
+      if (!componentValues[component.id]) { 
+        return;
+      }
+      if (!component.resources) {
+        return;
+      }
+      // fetch all resources
+      await Promise.all(component.resources.map(async resource => {
+        await fetch(process.env.PUBLIC_URL + resource).then(response => response.blob()).then(blob => {
+          folder.file(resource.split("/").pop(), blob);
+        }).catch(err => {
+          console.error(err);
+        });
+      }));
+    }));
     folder.file("internal.txt", searchParams.get('selection'));
     zip.generateAsync({ type: "blob" })
       .then(content => {

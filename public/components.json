@@ -6,7 +6,7 @@
       "description": "Replaces the favorite marker with a star. Just as it was intended.",
       "imagePath": "/pictures/star.png",
       "category": 2,
-      "css": ".tsv-icon-contact-status-favorite, .tsv-icon-chat-room-status-favorite {\n z-index: 10;\n left: 13px !important;\n top: 4px !important;\n stroke: rgba(0,0,0,.7);\n stroke-width: 1.3px;\n transform: scale(.61);\n}\n\n.tsv-view-banner :is(.tsv-icon-contact-status-favorite, .tsv-icon-chat-room-status-favorite) {\n transform: scale(.4);\n left: 30px !important;\n top: 15px !important;\n}\n\n.tsv-icon-contact-status-favorite rect, .tsv-icon-chat-room-status-favorite rect {\n display: none;\n}\n\n.tsv-icon-contact-status-favorite path, .tsv-icon-chat-room-status-favorite path {\n d: path('m 11.566084,-4e-7 3.002256,8.02905 8.563828,0.3742 L 16.423837,13.73968 18.714317,22 11.566084,17.26904 4.4178507,22 6.7083312,13.73968 0,8.4032496 l 8.5638277,-0.3742 z') !important;\n fill: orange;\n}"
+      "css": "/components/star.css"
     },
     {
       "id": 1,
@@ -14,7 +14,7 @@
       "description": "Hides the discover button so you don't need to meet new people.",
       "imagePath": "/pictures/no_discover.png",
       "category": 3,
-      "css": "div:has(> div.ts-sidebar-tab-sub-panel-accessory svg[name=\"discover\"]) {\ndisplay: none;\n}"
+      "css": "/components/no_discover.css"
     },
     {
       "id": 2,
@@ -22,7 +22,7 @@
       "description": "Centers channel banners in the server tree. Just like in the good old days!",
       "imagePath": "/pictures/center_banner.png",
       "category": 2,
-      "css": ".ts-server-tree-item-background-image img, .ts-server-tree-item-background-image-full img {\n left: 50% !important;\n transform: translate(-50%, 0);\n -webkit-mask-image: linear-gradient(90deg, transparent 0px, #000 var(--tsv-padding-h-large), #000 calc(100% - var(--tsv-padding-h-large)), transparent);\n}"
+      "css": "/components/center_banner.css"
     },
     {
       "id": 3,
@@ -30,7 +30,7 @@
       "description": "Removes the blurry background from images in the chat.",
       "imagePath": "/pictures/no_background.png",
       "category": 2,
-      "css": ".ts-chat-message-attachment-myts-file-background {\n display: none;\n}\n\n.ts-chat-message-attachment .ts-chat-message-attachment-inner .ts-chat-message-attachment-image .display {\n width: 100%;\n height: 100%;\n}"
+      "css": "/components/no_background.css"
     },
     {
       "id": 4,
@@ -38,7 +38,7 @@
       "description": "Removes the hexagon background from all the corners of the client.",
       "imagePath": "/pictures/no_hexes.png",
       "category": 2,
-      "css": ".ts-background-hexes-container {\n display: none\n}"
+      "css": "/components/no_hexes.css"
     },
     {
       "id": 5,
@@ -46,7 +46,7 @@
       "description": "Makes images in the chat scale to fit their aspect ratio, so you can finally see them.",
       "imagePath": "/pictures/scale_images.png",
       "category": 0,
-      "css": ".ts-chat-message-attachment-myts-file.isImage {\n height: unset !important;\n}\n\n.ts-chat-message-attachment .ts-chat-message-attachment-inner .ts-chat-message-attachment-image {\n height: unset !important;\n}"
+      "css": "/components/scale_images.css"
     },
     {
       "id": 6,
@@ -54,7 +54,7 @@
       "description": "Hides the user list, so you don't have to see people or their messages.",
       "imagePath": "/pictures/no_user_list.png",
       "category": 3,
-      "css": ".tsv-tabs:has(.tsv-bar-item.tsv-tab-item-active svg[name=contacts]) + .tsv-resize-area .tsv-resize-area-container {\n display: none;\n} \n\n.tsv-tabs:has(.tsv-bar-item.tsv-tab-item-active svg[name=contacts]) + .tsv-resize-area:after {\n width: 100%;\n display: block;\n content: \"You shall not be lured,\\A By humans or things!\\A You shall not be fooled,\\A By what the world brings!\" attr(title);\n padding: 5px 15px;\n white-space: pre-wrap;\n}"
+      "css": "/components/no_user_list.css"
     },
     {
       "id": 7,
@@ -62,7 +62,7 @@
       "description": "Hides the bookmarks, so you are not tempted to connect to a server.",
       "imagePath": "/pictures/no_bookmarks.png",
       "category": 3,
-      "css": ".tsv-tabs:has(.tsv-bar-item.tsv-tab-item-active svg[name=bookmarks]) + .tsv-resize-area .tsv-resize-area-container {\n display: none;\n} \n\n.tsv-tabs:has(.tsv-bar-item.tsv-tab-item-active svg[name=bookmarks]) + .tsv-resize-area:after {\n width: 100%;\n display: block;\n content: \"You shall not hear,\\A You shall not speak,\\A You shall not see,\\A You shall not seek!\" attr(title);\n padding: 5px 15px;\n white-space: pre-wrap;\n}"
+      "css": "/components/no_bookmarks.css"
     },
     {
       "id": 8,
@@ -70,7 +70,7 @@
       "description": "Hides the groups, so you are not influenced by the crowds.",
       "imagePath": "/pictures/no_groups.png",
       "category": 3,
-      "css": ".tsv-tabs:has(.tsv-bar-item.tsv-tab-item-active svg[name=groups]) + .tsv-resize-area .tsv-resize-area-container {\n display: none;\n} \n\n.tsv-tabs:has(.tsv-bar-item.tsv-tab-item-active svg[name=groups]) + .tsv-resize-area:after {\n width: 100%;\n display: block;\n content: \"You shall not be moved,\\A By the voices of the crowd!\\A You shall not be lost,\\A In the chaos of the loud!\" attr(title);\n padding: 5px 15px;\n white-space: pre-wrap;\n}"
+      "css": "/components/no_groups.css"
     },
     {
       "id": 9,
@@ -78,7 +78,7 @@
       "description": "Blurs server names and connection info, so you'll be alone with your thoughts.",
       "imagePath": "/pictures/privacy.png",
       "category": 1,
-      "css": ".tsv-activity-group-list > li.tsv-item .tsv-text-truncate,\n.tsv-activity-group-list > li li:first-child .tsv-text-truncate,\n.tsv-header-bar-below-tools:has(svg[name=bookmark]) .tsv-text-truncate,\n.tsv-server-info-footer p:first-child,\n.tsv-header-floating:has(+* .tsv-server-info-footer) .tsv-text-truncate,\n.tsv-dashboard-widget-content:has(.tsv-icon-server-connect) .tsv-text-truncate,\n.ts-sidebar-overlay-header-channel-servername {\n filter: blur(6px);\n transition: .3s ease all;\n}\n\n.tsv-activity-group-list > li.tsv-item .tsv-text-truncate:hover,\n.tsv-activity-group-list > li li:first-child .tsv-text-truncate:hover,\n.tsv-header-bar-below-tools:has(svg[name=bookmark]) .tsv-text-truncate:hover,\n.tsv-server-info-footer p:first-child:hover,\n.tsv-header-floating:has(+* .tsv-server-info-footer) .tsv-text-truncate:hover,\n.tsv-dashboard-widget-content:has(.tsv-icon-server-connect) .tsv-text-truncate:hover,\n.ts-sidebar-overlay-header-channel-servername:hover {\n filter: blur(0px);\n}"
+      "css": "/components/privacy.css"
     },
     {
       "id": 10,
@@ -86,7 +86,7 @@
       "description": "Blurs the changelog, so you don't accidentally leak the alpha changes again...",
       "imagePath": "/pictures/no_changelog.png",
       "category": 1,
-      "css": ".tsv-dashboard-widget-content:has(.tsv-changelog-selectable) {\n filter: blur(6px);\n transition: .3s ease all;\n transition-delay: 0s;\n}\n\n.tsv-dashboard-widget-content:has(.tsv-changelog-selectable):hover {\n filter: blur(0px);\n transition-delay: 1s;\n}"
+      "css": "/components/no_changelog.css"
     },
     {
       "id": 11,
@@ -94,7 +94,7 @@
       "description": "Indents chats in the activities to distinguish them from servers.",
       "imagePath": "/pictures/chat_indent.png",
       "category": 0,
-      "css": ".tsv-activity-group-list > li li:not(:first-child) {\n padding-left: calc(var(--tsv-padding-h) + 10px);\n}"
+      "css": "/components/chat_indent.css"
     },
     {
       "id": 12,
@@ -102,7 +102,7 @@
       "description": "Someone didn't know how to capitalize TeamSpeak correctly, so I fixed it.",
       "imagePath": "/pictures/fixed.png",
       "category": 0,
-      "css": "svg.tsv-icon-teamspeak-label path:nth-child(1) {\n d: path('M5.2,2.5H4v10.1H2.4V2.5H1.1V1.1h4.1V2.5z') !important;\n}\nsvg.tsv-icon-teamspeak-label path:nth-child(5) {\n d: path('M27.4,4.8V3.4c0-0.2,0-0.4,0-0.5c0-0.1,0-0.2-0.1-0.3c0-0.1-0.1-0.1-0.2-0.1c-0.1,0-0.3,0-0.4,0\\\n c-0.1,0-0.3,0-0.4,0c-0.1,0-0.2,0.1-0.2,0.1c0,0.1-0.1,0.2-0.1,0.3c0,0.2,0,0.3,0,0.5v1.1c0,0.2,0,0.4,0.1,0.5\\\n c0,0.1,0.2,0.2,0.4,0.3c0.2,0.1,0.5,0.3,0.7,0.4c0.2,0.1,0.5,0.3,0.9,0.5c0.2,0.1,0.4,0.3,0.6,0.4c0.2,0.2,0.3,0.3,0.3,0.4\\\n C28.9,7.3,29,7.5,29,7.7c0,0.3,0,0.6,0,0.8v1.8c0,0.5,0,1-0.1,1.3c-0.1,0.3-0.2,0.6-0.4,0.7c-0.2,0.2-0.4,0.3-0.7,0.3\\\n c-0.3,0.1-0.7,0.1-1.2,0.1c-0.5,0-0.8,0-1.1-0.1c-0.3,0-0.5-0.1-0.7-0.3c-0.2-0.2-0.3-0.4-0.4-0.7c-0.1-0.3-0.1-0.7-0.1-1.3V8H26\\\n v2.3c0,0.2,0,0.3,0,0.5c0,0.1,0,0.2,0.1,0.3c0,0.1,0.1,0.1,0.2,0.1c0.1,0,0.2,0,0.4,0c0.3,0,0.5-0.1,0.6-0.2\\\n c0.1-0.1,0.1-0.4,0.1-0.8V8.6c0-0.3,0-0.6-0.1-0.7c-0.1-0.2-0.2-0.3-0.3-0.4c-0.1-0.1-0.2-0.1-0.4-0.2c-0.2-0.1-0.3-0.2-0.5-0.3\\\n c-0.2-0.1-0.4-0.2-0.5-0.3c-0.2-0.1-0.3-0.2-0.5-0.3c-0.2-0.1-0.3-0.3-0.5-0.4c-0.1-0.1-0.2-0.2-0.3-0.4c-0.1-0.1-0.1-0.3-0.1-0.5\\\n c0-0.3,0-0.5,0-0.7V3.4c0-0.6,0-1,0.1-1.3c0.1-0.3,0.2-0.6,0.3-0.7c0.2-0.2,0.4-0.3,0.7-0.3C25.8,1,26.2,1,26.6,1\\\n c0.5,0,0.8,0,1.2,0.1c0.3,0.1,0.5,0.2,0.7,0.3c0.2,0.2,0.3,0.4,0.4,0.7C28.9,2.4,29,2.9,29,3.4v1.4H27.4z') !important;\n}\nsvg.tsv-icon-teamspeak-label path:nth-child(6) {\n d: path('M34.3,10.9c0,0.4,0,0.7-0.1,0.8c0,0.3-0.1,0.4-0.2,0.6c-0.1,0.1-0.2,0.2-0.4,0.3c-0.2,0.1-0.4,0.1-0.7,0.1\\\n c-0.3,0-0.6,0-0.8-0.1c-0.2-0.1-0.4-0.2-0.5-0.5v2.8h-1.5v-11h1.4v0.6c0.1-0.3,0.3-0.5,0.5-0.6c0.2-0.1,0.5-0.1,0.8-0.1\\\n c0.3,0,0.5,0,0.7,0.1C33.8,4,33.9,4.1,34,4.2c0.1,0.1,0.2,0.3,0.2,0.6c0,0.2,0.1,0.5,0.1,0.8V10.9z M31.6,10.9\\\n c0.1,0.2,0.2,0.3,0.3,0.4c0.1,0.1,0.2,0.1,0.4,0.1c0.2,0,0.4-0.1,0.4-0.2c0.1-0.1,0.1-0.3,0.1-0.6V5.9c0-0.3,0-0.5-0.1-0.6\\\n c-0.1-0.1-0.2-0.1-0.4-0.1c-0.2,0-0.3,0-0.4,0.1c-0.1,0.1-0.2,0.2-0.3,0.3V10.9z') !important;\n}\nsvg.tsv-icon-teamspeak-label path:nth-child(7) {\n d: path('M36.8,8.8v2.1c0,0.3,0,0.5,0.1,0.5c0.1,0.1,0.2,0.1,0.5,0.1c0.3,0,0.4,0,0.5-0.1c0.1-0.1,0.1-0.3,0.1-0.5V9.6\\\n h1.3v1.3c0,0.4,0,0.7-0.1,1c-0.1,0.2-0.2,0.4-0.3,0.6c-0.1,0.1-0.3,0.2-0.6,0.2c-0.2,0-0.6,0.1-1,0.1c-0.4,0-0.8,0-1-0.1\\\n c-0.3,0-0.5-0.1-0.6-0.3c-0.2-0.1-0.3-0.3-0.3-0.5c-0.1-0.2-0.1-0.6-0.1-1V5.6c0-0.4,0-0.7,0.1-1c0-0.3,0.1-0.4,0.3-0.6\\\n c0.1-0.1,0.3-0.2,0.6-0.2c0.2,0,0.6-0.1,1-0.1c0.4,0,0.8,0,1,0.1c0.3,0,0.5,0.1,0.6,0.2c0.1,0.1,0.2,0.3,0.3,0.6\\\n c0,0.3,0.1,0.6,0.1,1v3.2H36.8z M36.8,7.6H38V5.7c0-0.3,0-0.5-0.1-0.5c-0.1-0.1-0.2-0.1-0.5-0.1c-0.3,0-0.4,0-0.5,0.1\\\n c-0.1,0.1-0.1,0.3-0.1,0.5V7.6z') !important;\n}\nsvg.tsv-icon-teamspeak-label path:nth-child(8) {\n d: path('M41.4,12.7c-0.3,0-0.5-0.1-0.6-0.2c-0.1-0.1-0.2-0.3-0.3-0.5c-0.1-0.2-0.1-0.5-0.1-0.9V9\\\n c0-0.5,0.1-0.9,0.3-1.2c0.2-0.2,0.5-0.4,1-0.4H42c0.3,0,0.5,0,0.7,0c0.1,0,0.2,0.1,0.3,0.1V5.8c0-0.3,0-0.5-0.1-0.6\\\n C42.8,5.1,42.6,5,42.4,5c-0.3,0-0.4,0-0.5,0.1c-0.1,0.1-0.1,0.3-0.1,0.6v0.9h-1.3v-1c0-0.4,0-0.7,0.1-1c0-0.2,0.1-0.4,0.3-0.6\\\n c0.1-0.1,0.3-0.2,0.6-0.2c0.2,0,0.5-0.1,1-0.1c0.4,0,0.8,0,1,0.1c0.3,0,0.5,0.1,0.6,0.2c0.1,0.1,0.2,0.3,0.3,0.6s0.1,0.6,0.1,1v7\\\n c-0.2,0.1-0.5,0.1-0.8,0.1c-0.4,0-0.8,0-1.2,0C41.9,12.8,41.6,12.7,41.4,12.7z M43,11.5V8.7c-0.1,0-0.1-0.1-0.2-0.1\\\n c-0.1,0-0.2,0-0.3,0c-0.1,0-0.3,0-0.4,0c-0.1,0-0.2,0.1-0.2,0.1c0,0.1-0.1,0.1-0.1,0.2c0,0.1,0,0.2,0,0.4v1.4c0,0.2,0,0.4,0,0.4\\\n c0,0.1,0,0.2,0.1,0.2c0,0.1,0.1,0.1,0.2,0.1c0.1,0,0.3,0,0.4,0C42.7,11.5,42.9,11.5,43,11.5z') !important;\n}\nsvg.tsv-icon-teamspeak-label path:nth-child(9) {\n d: path('M48.5,12.6l-1.3-4.5h-0.1v4.5h-1.4V1.1h1.4v6h0.1l1.2-3.2h1.6l-1.6,3.6l1.7,5.1H48.5z') !important;\n}"
+      "css": "/components/fixed.css"
     },
     {
       "id": 13,
@@ -110,7 +110,7 @@
       "description": "Makes the client grayscale, so you can focus on the important things.",
       "imagePath": "/pictures/grayscale.png",
       "category": 4,
-      "css": "html {\n filter: grayscale();\n}"
+      "css": "/components/grayscale.css"
     },
     {
       "id": 14,
@@ -118,7 +118,7 @@
       "description": "Makes the client high contrast, so you can focus on the important things.",
       "imagePath": "/pictures/high_contrast.png",
       "category": 4,
-      "css": "html {\n filter: contrast(200%);\n}"
+      "css": "/components/high_contrast.css"
     },
     {
       "id": 15,
@@ -126,7 +126,7 @@
       "description": "Position the overlay in the bottom left inline, so you can see the things behind.",
       "imagePath": "/pictures/overlaynt.png",
       "category": 0,
-      "css": ".tsv-sidebar {\n background: var(--tsv-shaded-bg);\n}\n\n.ts-servertree-sidebar-overlay {\n position: initial;\n}"
+      "css": "/components/overlaynt.css"
     },
     {
       "id": 16,
@@ -134,7 +134,7 @@
       "description": "Removes the reactions from messages, so you won't be bothered with 🥓 reactions.",
       "imagePath": "/pictures/unemotional.png",
       "category": 0,
-      "css": ".ts-reactions {\n display: none;\n}"
+      "css": "/components/unemotional.css"
     },
     {
       "id": 17,
@@ -142,7 +142,18 @@
       "description": "Everything is bacon, Everything is cool when you're part of the bacon.",
       "imagePath": "/pictures/bacon.png",
       "category": 3,
-      "css": ".ts-parsed-text-content-emoji {\n content: url(\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAzNiAzNic+PHBhdGggZmlsbD0iI0REMkU0NCIgZD0iTTIwLjQ2OSAzMi4wMzFjLS44NDctLjcwMy0uNDQzLTIuNDQ0LTItNC0xLjU1Ny0xLjU1Ny01LjEwMi0xLjc4NS02LjY1OC0zLjM0Mi0xLjU1Ny0xLjU1Ny0yLjc4NS02LjEwMi00LjM0Mi03LjY1OS0xLjU1Ni0xLjU1Ny0zLjAxNi0xLjUwOC00LTItMi0xLTIuODgyLTIuOTQyLTMtNCAwIDAgMy4xNDMtMy4wMDEgMy01LS4xNDMtMS45OTkgMi01IDItNXMxLTEuMDAxIDUgNWMuNzg0IDEuMTc3IDQgMSA2IDNzMiA0Ljk5OSA0IDdjMiAyIDUgMiA3IDRzMS44MjIgNS4yMTYgMyA2YzYgNCA1IDUgNSA1cy00LjE3IDMtNi45OTkgM2MtMS4wMDEgMC00LjAwMSAxLTQuMDAxIDEtMSAuMDAxLTIuMTIzLTEuNDM5LTQtMi45OTl6Ii8+PHBhdGggZmlsbD0iI0Y0QUJCQSIgZD0iTTM0LjQ1MiAzMS40NjdjLS4yNTctLjY1Ny0xLjI5OC0xLjk3OS00Ljk4NC00LjQzNi0xLjE3OC0uNzg0LTEtNC0zLTZzLTUtMi03LTQtMi01LTQtNy01LjIxNi0xLjgyMy02LTNDNy4wMTIgMy4zNDUgNS42OSAyLjMwNSA1LjAzMyAyLjA0OGMtLjA2Ni0uMDI2LS4xMjUtLjA0NS0uMTc4LS4wNTctLjE5Ni4zMzEtLjQxMy43MjMtLjYxOSAxLjE1LjA3OS4wNDMuMTY2LjA5NS4yNi4xNTkuNzUzLjUxMSAxLjk5NSAxLjc2MyAzLjk3MyA0LjczLjc4NCAxLjE3NyA0IDEgNiAzczIgNSA0IDcgNSAyIDcgNCAxLjgyMiA1LjIxNiAzIDZjMi45NjcgMS45NzggNC4yMTkgMy4yMiA0LjczIDMuOTczLjA4My4xMjIuMTQ1LjIzLjE5My4zMjcuNDI1LS4yMzguODA1LS40NjcgMS4xMjItLjY2Ny0uMDEyLS4wNTYtLjAzMy0uMTIzLS4wNjItLjE5NnoiLz48cGF0aCBmaWxsPSIjRkZFOEI2IiBkPSJNMzMuMTk5IDMyLjAwNGMtLjUxMS0uNzUzLTEuNzYzLTEuOTk1LTQuNzMtMy45NzMtMS4xNzgtLjc4NC0xLTQtMy02cy01LTItNy00LTItNS00LTctNS4yMTYtMS44MjMtNi0zYy0xLjk3OC0yLjk2Ny0zLjIyLTQuMjE5LTMuOTczLTQuNzMtLjA5NC0uMDY0LS4xODEtLjExNy0uMjYtLjE1OS0uMjAyLjQxOC0uMzg5Ljg2Ni0uNTI5IDEuMzE0LjA2OC4wNTMuMTQyLjExNS4yMTcuMTc5Ljc2OS42NTYgMS45IDEuOTI5IDMuNTQ1IDQuMzk2IDIgMyA0IDIgNiA0czIgNCA0IDYgNCAyIDYgNCAxIDQgNCA2YzIuNDY2IDEuNjQ0IDMuNzM5IDIuNzc1IDQuMzk2IDMuNTQ1LjEyLjE0MS4yMjQuMjcyLjMwNi4zODkuNDMxLS4yMDYuODQyLS40MjIgMS4yMjEtLjYzNC0uMDQ4LS4wOTctLjExLS4yMDUtLjE5My0uMzI3eiIvPjxwYXRoIGZpbGw9IiNFQTU5NkUiIGQ9Ik0zMS44NjUgMzIuNTc2Yy0uNjU2LS43NjktMS45MjktMS45LTQuMzk2LTMuNTQ1LTMtMi0yLTQtNC02cy00LTItNi00Yy0yLTIuMDAxLTItNC00LTZzLTQtMS02LTRDNS44MjUgNi41NjQgNC42OTQgNS4yOTIgMy45MjQgNC42MzVjLS4wNzUtLjA2NC0uMTQ5LS4xMjYtLjIxNy0uMTc5LS4xMzQuNDI1LS4yMjIuODQ4LS4yMzkgMS4yNDQtLjAwNS4xMTItLjAwNy4yMjQuMDAxLjMzMS4wMjUuMzUzLS4wNTYuNzM4LS4yIDEuMTMxLjYwNy42NTEgMS4zMjkgMS41NjIgMi4yIDIuODY5Ljc4NCAxLjE3NyA0IDEgNiAzczIgNiA0IDggNSAyIDcgNCAyLjgyMiA1LjIxNiA0IDZjMS41MjEgMS4wMTQgMi41MjQgMS44MzMgMy4xOCAyLjQ5NC4xMDIuMTAyLjE4NS4xOTYuMjcuMjkxLjc1MS0uMTk1IDEuNTI0LS41MDQgMi4yNTEtLjg1Mi0uMDgxLS4xMTYtLjE4NS0uMjQ3LS4zMDUtLjM4OHoiLz48cGF0aCBmaWxsPSIjRkZFOEI2IiBkPSJNMjYuNDY5IDMxLjAzMWMtMS4xNzgtLjc4NC0yLTQtNC02cy01LTItNy00Yy0yLTIuMDAxLTItNi00LThzLTUuMjE2LTEuODIzLTYtM2MtLjg3MS0xLjMwNy0xLjU5My0yLjIxOC0yLjItMi44NjktLjIyNy42MTgtLjYxNiAxLjI1Ni0xLjAzNiAxLjgzNC42MTQuNzMgMS4zNDcgMS43MDIgMi4yMzYgMy4wMzUuNzg0IDEuMTc3IDQgMSA2IDNzMiA1IDQgNyA1IDIgNyA0IDEuODIyIDUuMjE2IDMgNmMxLjI3Ny44NTIgMi4yMjMgMS41NiAyLjk0MyAyLjE1OS40MjYtLjA5NS44MDYtLjE1OSAxLjA1OC0uMTU5LjQ1NiAwIC45NDctLjA4NCAxLjQ1LS4yMTQtLjA4NS0uMDk1LS4xNjktLjE4OS0uMjctLjI5MS0uNjU3LS42NjEtMS42Ni0xLjQ4MS0zLjE4MS0yLjQ5NXoiLz48cGF0aCBmaWxsPSIjRUE1OTZFIiBkPSJNMjEuNDY5IDI2LjAzMWMtMi0yLTUtMi03LTQtMi0yLjAwMS0yLTUtNC03cy01LjIxNi0xLjgyMy02LTNjLS44ODktMS4zMzMtMS42MjItMi4zMDUtMi4yMzYtMy4wMzUtLjEzNC4xODQtLjI2OS4zNi0uNDA1LjUyOS0uMTcxLjIxNC0uMzM4LjQxMS0uNDk1LjU5LjA1NC4wNjYuMTA0LjEyMi4xNjEuMTkyLjU1OS42OTEgMS4yMTIgMS41NzggMS45NzUgMi43MjQuNzg0IDEuMTc3IDQgMSA2IDNzMiA1IDQgNyA1IDIgNyA0IDEuODIyIDUuMjE2IDMgNmMuOTA4LjYwNSAxLjYzOCAxLjEzNCAyLjI1MyAxLjYwOC41My0uMTU3IDEuMTQ3LS4zMjkgMS42ODktLjQ1LS43Mi0uNTk5LTEuNjY1LTEuMzA3LTIuOTQzLTIuMTU5LTEuMTc3LS43ODMtLjk5OS0zLjk5OS0yLjk5OS01Ljk5OXoiLz48L3N2Zz4=\");\n}\n\n.ts-emoji-picker-emoji > svg {\n background: url(\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAzNiAzNic+PHBhdGggZmlsbD0iI0REMkU0NCIgZD0iTTIwLjQ2OSAzMi4wMzFjLS44NDctLjcwMy0uNDQzLTIuNDQ0LTItNC0xLjU1Ny0xLjU1Ny01LjEwMi0xLjc4NS02LjY1OC0zLjM0Mi0xLjU1Ny0xLjU1Ny0yLjc4NS02LjEwMi00LjM0Mi03LjY1OS0xLjU1Ni0xLjU1Ny0zLjAxNi0xLjUwOC00LTItMi0xLTIuODgyLTIuOTQyLTMtNCAwIDAgMy4xNDMtMy4wMDEgMy01LS4xNDMtMS45OTkgMi01IDItNXMxLTEuMDAxIDUgNWMuNzg0IDEuMTc3IDQgMSA2IDNzMiA0Ljk5OSA0IDdjMiAyIDUgMiA3IDRzMS44MjIgNS4yMTYgMyA2YzYgNCA1IDUgNSA1cy00LjE3IDMtNi45OTkgM2MtMS4wMDEgMC00LjAwMSAxLTQuMDAxIDEtMSAuMDAxLTIuMTIzLTEuNDM5LTQtMi45OTl6Ii8+PHBhdGggZmlsbD0iI0Y0QUJCQSIgZD0iTTM0LjQ1MiAzMS40NjdjLS4yNTctLjY1Ny0xLjI5OC0xLjk3OS00Ljk4NC00LjQzNi0xLjE3OC0uNzg0LTEtNC0zLTZzLTUtMi03LTQtMi01LTQtNy01LjIxNi0xLjgyMy02LTNDNy4wMTIgMy4zNDUgNS42OSAyLjMwNSA1LjAzMyAyLjA0OGMtLjA2Ni0uMDI2LS4xMjUtLjA0NS0uMTc4LS4wNTctLjE5Ni4zMzEtLjQxMy43MjMtLjYxOSAxLjE1LjA3OS4wNDMuMTY2LjA5NS4yNi4xNTkuNzUzLjUxMSAxLjk5NSAxLjc2MyAzLjk3MyA0LjczLjc4NCAxLjE3NyA0IDEgNiAzczIgNSA0IDcgNSAyIDcgNCAxLjgyMiA1LjIxNiAzIDZjMi45NjcgMS45NzggNC4yMTkgMy4yMiA0LjczIDMuOTczLjA4My4xMjIuMTQ1LjIzLjE5My4zMjcuNDI1LS4yMzguODA1LS40NjcgMS4xMjItLjY2Ny0uMDEyLS4wNTYtLjAzMy0uMTIzLS4wNjItLjE5NnoiLz48cGF0aCBmaWxsPSIjRkZFOEI2IiBkPSJNMzMuMTk5IDMyLjAwNGMtLjUxMS0uNzUzLTEuNzYzLTEuOTk1LTQuNzMtMy45NzMtMS4xNzgtLjc4NC0xLTQtMy02cy01LTItNy00LTItNS00LTctNS4yMTYtMS44MjMtNi0zYy0xLjk3OC0yLjk2Ny0zLjIyLTQuMjE5LTMuOTczLTQuNzMtLjA5NC0uMDY0LS4xODEtLjExNy0uMjYtLjE1OS0uMjAyLjQxOC0uMzg5Ljg2Ni0uNTI5IDEuMzE0LjA2OC4wNTMuMTQyLjExNS4yMTcuMTc5Ljc2OS42NTYgMS45IDEuOTI5IDMuNTQ1IDQuMzk2IDIgMyA0IDIgNiA0czIgNCA0IDYgNCAyIDYgNCAxIDQgNCA2YzIuNDY2IDEuNjQ0IDMuNzM5IDIuNzc1IDQuMzk2IDMuNTQ1LjEyLjE0MS4yMjQuMjcyLjMwNi4zODkuNDMxLS4yMDYuODQyLS40MjIgMS4yMjEtLjYzNC0uMDQ4LS4wOTctLjExLS4yMDUtLjE5My0uMzI3eiIvPjxwYXRoIGZpbGw9IiNFQTU5NkUiIGQ9Ik0zMS44NjUgMzIuNTc2Yy0uNjU2LS43NjktMS45MjktMS45LTQuMzk2LTMuNTQ1LTMtMi0yLTQtNC02cy00LTItNi00Yy0yLTIuMDAxLTItNC00LTZzLTQtMS02LTRDNS44MjUgNi41NjQgNC42OTQgNS4yOTIgMy45MjQgNC42MzVjLS4wNzUtLjA2NC0uMTQ5LS4xMjYtLjIxNy0uMTc5LS4xMzQuNDI1LS4yMjIuODQ4LS4yMzkgMS4yNDQtLjAwNS4xMTItLjAwNy4yMjQuMDAxLjMzMS4wMjUuMzUzLS4wNTYuNzM4LS4yIDEuMTMxLjYwNy42NTEgMS4zMjkgMS41NjIgMi4yIDIuODY5Ljc4NCAxLjE3NyA0IDEgNiAzczIgNiA0IDggNSAyIDcgNCAyLjgyMiA1LjIxNiA0IDZjMS41MjEgMS4wMTQgMi41MjQgMS44MzMgMy4xOCAyLjQ5NC4xMDIuMTAyLjE4NS4xOTYuMjcuMjkxLjc1MS0uMTk1IDEuNTI0LS41MDQgMi4yNTEtLjg1Mi0uMDgxLS4xMTYtLjE4NS0uMjQ3LS4zMDUtLjM4OHoiLz48cGF0aCBmaWxsPSIjRkZFOEI2IiBkPSJNMjYuNDY5IDMxLjAzMWMtMS4xNzgtLjc4NC0yLTQtNC02cy01LTItNy00Yy0yLTIuMDAxLTItNi00LThzLTUuMjE2LTEuODIzLTYtM2MtLjg3MS0xLjMwNy0xLjU5My0yLjIxOC0yLjItMi44NjktLjIyNy42MTgtLjYxNiAxLjI1Ni0xLjAzNiAxLjgzNC42MTQuNzMgMS4zNDcgMS43MDIgMi4yMzYgMy4wMzUuNzg0IDEuMTc3IDQgMSA2IDNzMiA1IDQgNyA1IDIgNyA0IDEuODIyIDUuMjE2IDMgNmMxLjI3Ny44NTIgMi4yMjMgMS41NiAyLjk0MyAyLjE1OS40MjYtLjA5NS44MDYtLjE1OSAxLjA1OC0uMTU5LjQ1NiAwIC45NDctLjA4NCAxLjQ1LS4yMTQtLjA4NS0uMDk1LS4xNjktLjE4OS0uMjctLjI5MS0uNjU3LS42NjEtMS42Ni0xLjQ4MS0zLjE4MS0yLjQ5NXoiLz48cGF0aCBmaWxsPSIjRUE1OTZFIiBkPSJNMjEuNDY5IDI2LjAzMWMtMi0yLTUtMi03LTQtMi0yLjAwMS0yLTUtNC03cy01LjIxNi0xLjgyMy02LTNjLS44ODktMS4zMzMtMS42MjItMi4zMDUtMi4yMzYtMy4wMzUtLjEzNC4xODQtLjI2OS4zNi0uNDA1LjUyOS0uMTcxLjIxNC0uMzM4LjQxMS0uNDk1LjU5LjA1NC4wNjYuMTA0LjEyMi4xNjEuMTkyLjU1OS42OTEgMS4yMTIgMS41NzggMS45NzUgMi43MjQuNzg0IDEuMTc3IDQgMSA2IDNzMiA1IDQgNyA1IDIgNyA0IDEuODIyIDUuMjE2IDMgNmMuOTA4LjYwNSAxLjYzOCAxLjEzNCAyLjI1MyAxLjYwOC41My0uMTU3IDEuMTQ3LS4zMjkgMS42ODktLjQ1LS43Mi0uNTk5LTEuNjY1LTEuMzA3LTIuOTQzLTIuMTU5LTEuMTc3LS43ODMtLjk5OS0zLjk5OS0yLjk5OS01Ljk5OXoiLz48L3N2Zz4=\");\n}\n\n.ts-emoji-picker-emoji > svg * {\n display: none;\n}\n\n.ts-emoji-picker .ts-emoji-picker-skin-swatches .ts-emoji-picker-skin-swatch > span {\n background-color: #ec6c76 !important;\n}"
+      "css": "/components/bacon.css"
+    },
+    {
+      "id": 18,
+      "name": "Let it Snow.",
+      "description": "Adds a snow effect to the client, so you can feel the winter.",
+      "imagePath": "/pictures/snow.png",
+      "category": 2,
+      "css": "/components/snow.css",
+      "resources": [
+        "/components/snow.apng"
+      ]
     }
   ],
   "categories": [

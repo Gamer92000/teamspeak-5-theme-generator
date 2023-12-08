@@ -1,0 +1,16 @@
+.tsv-tabs:has(.tsv-bar-item.tsv-tab-item-active svg[name="groups"])
+  + .tsv-resize-area
+  .tsv-resize-area-container {
+  display: none;
+}
+
+.tsv-tabs:has(.tsv-bar-item.tsv-tab-item-active svg[name="groups"])
+  + .tsv-resize-area:after {
+  width: 100%;
+  display: block;
+  content: "You shall not be moved,\A By the voices of the crowd!\A You shall not be lost,\A In the chaos of the loud!"attr(
+      title
+    );
+  padding: 5px 15px;
+  white-space: pre-wrap;
+}
