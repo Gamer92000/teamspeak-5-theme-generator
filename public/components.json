@@ -152,7 +152,7 @@
       "category": 2,
       "css": "/components/snow.css",
       "resources": [
-        "/components/snow.apng"
+        "/components/snow.svg"
       ]
     }
   ],
