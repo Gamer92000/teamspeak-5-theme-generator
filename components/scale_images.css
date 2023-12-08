@@ -1,0 +1,9 @@
+.ts-chat-message-attachment-myts-file.isImage {
+  height: unset !important;
+}
+
+.ts-chat-message-attachment
+  .ts-chat-message-attachment-inner
+  .ts-chat-message-attachment-image {
+  height: unset !important;
+}

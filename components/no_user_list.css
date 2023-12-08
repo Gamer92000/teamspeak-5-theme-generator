@@ -1,0 +1,16 @@
+.tsv-tabs:has(.tsv-bar-item.tsv-tab-item-active svg[name="contacts"])
+  + .tsv-resize-area
+  .tsv-resize-area-container {
+  display: none;
+}
+
+.tsv-tabs:has(.tsv-bar-item.tsv-tab-item-active svg[name="contacts"])
+  + .tsv-resize-area:after {
+  width: 100%;
+  display: block;
+  content: "You shall not be lured,\A By humans or things!\A You shall not be fooled,\A By what the world brings!"attr(
+      title
+    );
+  padding: 5px 15px;
+  white-space: pre-wrap;
+}

@@ -1,0 +1,29 @@
+.tsv-icon-contact-status-favorite,
+.tsv-icon-chat-room-status-favorite {
+  z-index: 10;
+  left: 13px !important;
+  top: 4px !important;
+  stroke: rgba(0, 0, 0, 0.7);
+  stroke-width: 1.3px;
+  transform: scale(0.61);
+}
+
+.tsv-view-banner
+  :is(.tsv-icon-contact-status-favorite, .tsv-icon-chat-room-status-favorite) {
+  transform: scale(0.4);
+  left: 30px !important;
+  top: 15px !important;
+}
+
+.tsv-icon-contact-status-favorite rect,
+.tsv-icon-chat-room-status-favorite rect {
+  display: none;
+}
+
+.tsv-icon-contact-status-favorite path,
+.tsv-icon-chat-room-status-favorite path {
+  d: path(
+    "m 11.566084,-4e-7 3.002256,8.02905 8.563828,0.3742 L 16.423837,13.73968 18.714317,22 11.566084,17.26904 4.4178507,22 6.7083312,13.73968 0,8.4032496 l 8.5638277,-0.3742 z"
+  ) !important;
+  fill: orange;
+}

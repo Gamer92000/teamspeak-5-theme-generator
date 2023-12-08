@@ -1,0 +1,12 @@
+.ts-server-tree-item-background-image img,
+.ts-server-tree-item-background-image-full img {
+  left: 50% !important;
+  transform: translate(-50%, 0);
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent 0px,
+    #000 var(--tsv-padding-h-large),
+    #000 calc(100% - var(--tsv-padding-h-large)),
+    transparent
+  );
+}

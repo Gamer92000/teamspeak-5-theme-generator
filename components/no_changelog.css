@@ -1,0 +1,10 @@
+.tsv-dashboard-widget-content:has(.tsv-changelog-selectable) {
+  filter: blur(6px);
+  transition: 0.3s ease all;
+  transition-delay: 0s;
+}
+
+.tsv-dashboard-widget-content:has(.tsv-changelog-selectable):hover {
+  filter: blur(0px);
+  transition-delay: 1s;
+}
