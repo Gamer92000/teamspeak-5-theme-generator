@@ -154,6 +154,17 @@
       "resources": [
         "/components/snow.svg"
       ]
+    },
+    {
+      "id": 19,
+      "name": "Let it Bacon.",
+      "description": "Adds a bacon effect to the client, so you can feel the bacon.",
+      "imagePath": "/pictures/bacon_rain.png",
+      "category": 3,
+      "css": "/components/bacon_rain.css",
+      "resources": [
+        "/components/bacon.svg"
+      ]
     }
   ],
   "categories": [
