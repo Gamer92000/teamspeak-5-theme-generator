@@ -151,9 +151,7 @@
       "imagePath": "/pictures/snow.png",
       "category": 2,
       "css": "/components/snow.css",
-      "resources": [
-        "/components/snow.svg"
-      ]
+      "resources": ["/components/snow.svg"]
     },
     {
       "id": 19,
@@ -162,9 +160,15 @@
       "imagePath": "/pictures/bacon_rain.png",
       "category": 3,
       "css": "/components/bacon_rain.css",
-      "resources": [
-        "/components/bacon.svg"
-      ]
+      "resources": ["/components/bacon.svg"]
+    },
+    {
+      "id": 20,
+      "name": "Adblock",
+      "description": "Why TeamSpeak... You were supposed to destroy them not join them!",
+      "imagePath": "/pictures/adblock.png",
+      "category": 0,
+      "css": "/components/adblock.css"
     }
   ],
   "categories": [
