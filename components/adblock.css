@@ -1,3 +1,11 @@
-.ts-join-community {
+.ts-join-community .tsv-button-filled {
+  display: none;
+}
+
+.ts-start-community-banner {
+  display: none;
+}
+
+.ts-start-community-banner + .ts-horizontal-separator {
   display: none;
 }
