@@ -1,16 +1,13 @@
-.tsv-tabs:has(.tsv-bar-item.tsv-tab-item-active svg[name="bookmarks"])
-  + .tsv-resize-area
-  .tsv-resize-area-container {
+.tsv-tabs:has(svg[name="bookmarks"]):has(.tsv-bar-item .tsv-bar-item-title-container)+.tsv-resize-area .tsv-resize-area-container,
+.tsv-tabs:has(.tsv-bar-item.tsv-tab-item-active svg[name="bookmarks"])+.tsv-resize-area .tsv-resize-area-container {
   display: none;
 }
 
-.tsv-tabs:has(.tsv-bar-item.tsv-tab-item-active svg[name="bookmarks"])
-  + .tsv-resize-area:after {
+.tsv-tabs:has(svg[name="bookmarks"]):has(.tsv-bar-item .tsv-bar-item-title-container)+.tsv-resize-area:after,
+.tsv-tabs:has(.tsv-bar-item.tsv-tab-item-active svg[name="bookmarks"])+.tsv-resize-area:after {
   width: 100%;
   display: block;
-  content: "You shall not hear,\A You shall not speak,\A You shall not see,\A You shall not seek!"attr(
-      title
-    );
+  content: "You shall not hear,\A You shall not speak,\A You shall not see,\A You shall not seek!" attr(title);
   padding: 5px 15px;
   white-space: pre-wrap;
 }

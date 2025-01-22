@@ -1,22 +1,6 @@
 {
   "components": [
     {
-      "id": 0,
-      "name": "You are my Star.",
-      "description": "Replaces the favorite marker with a star. Just as it was intended.",
-      "imagePath": "/pictures/star.png",
-      "category": 2,
-      "css": "/components/star.css"
-    },
-    {
-      "id": 1,
-      "name": "I am shy.",
-      "description": "Hides the discover button so you don't need to meet new people.",
-      "imagePath": "/pictures/no_discover.png",
-      "category": 3,
-      "css": "/components/no_discover.css"
-    },
-    {
       "id": 2,
       "name": "Is this the Middle?",
       "description": "Centers channel banners in the server tree. Just like in the good old days!",
@@ -31,14 +15,6 @@
       "imagePath": "/pictures/no_background.png",
       "category": 2,
       "css": "/components/no_background.css"
-    },
-    {
-      "id": 4,
-      "name": "No more Hexes.",
-      "description": "Removes the hexagon background from all the corners of the client.",
-      "imagePath": "/pictures/no_hexes.png",
-      "category": 2,
-      "css": "/components/no_hexes.css"
     },
     {
       "id": 5,
@@ -78,7 +54,8 @@
       "description": "Blurs server names and connection info, so you'll be alone with your thoughts.",
       "imagePath": "/pictures/privacy.png",
       "category": 1,
-      "css": "/components/privacy.css"
+      "css": "/components/privacy.css",
+      "disabled": true
     },
     {
       "id": 10,
@@ -86,7 +63,8 @@
       "description": "Blurs the changelog, so you don't accidentally leak the alpha changes again...",
       "imagePath": "/pictures/no_changelog.png",
       "category": 1,
-      "css": "/components/no_changelog.css"
+      "css": "/components/no_changelog.css",
+      "disabled": true
     },
     {
       "id": 11,
@@ -119,14 +97,6 @@
       "imagePath": "/pictures/high_contrast.png",
       "category": 4,
       "css": "/components/high_contrast.css"
-    },
-    {
-      "id": 15,
-      "name": "Overlayn't.",
-      "description": "Position the overlay in the bottom left inline, so you can see the things behind.",
-      "imagePath": "/pictures/overlaynt.png",
-      "category": 0,
-      "css": "/components/overlaynt.css"
     },
     {
       "id": 16,
@@ -164,38 +134,43 @@
     },
     {
       "id": 20,
-      "name": "Adblock",
+      "name": "Ad Removal",
       "description": "Why TeamSpeak... You were supposed to destroy them not join them!",
       "imagePath": "/pictures/adblock.png",
-      "category": 0,
+      "category": 5,
       "css": "/components/adblock.css"
     }
   ],
   "categories": [
     {
       "id": 0,
-      "sort_id": 1,
+      "sort_id": 2,
       "name": "Tweaks"
     },
     {
       "id": 1,
-      "sort_id": 2,
+      "sort_id": 3,
       "name": "Privacy"
     },
     {
       "id": 2,
-      "sort_id": 0,
+      "sort_id": 1,
       "name": "Aesthetics"
     },
     {
       "id": 3,
-      "sort_id": 3,
+      "sort_id": 4,
       "name": "Useless"
     },
     {
       "id": 4,
-      "sort_id": 4,
+      "sort_id": 5,
       "name": "Accessibility"
+    },
+    {
+      "id": 5,
+      "sort_id": 0,
+      "name": "What you are here for..."
     }
   ]
 }
