@@ -4,6 +4,7 @@
   "homepage": "https://Gamer92000.github.io/teamspeak-5-theme-generator",
   "private": true,
   "dependencies": {
+    "@floating-ui/react": "^0.27.3",
     "@testing-library/jest-dom": "^6.1.5",
     "@testing-library/react": "^14.1.2",
     "@testing-library/user-event": "^14.5.1",

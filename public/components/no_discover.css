@@ -1,3 +1,0 @@
-div:has(> div.ts-sidebar-tab-sub-panel-accessory svg[name=\"discover\"]) {
-  display: none;
-}

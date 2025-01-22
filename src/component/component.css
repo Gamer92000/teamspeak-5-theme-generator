@@ -14,6 +14,11 @@
   cursor: pointer;
 }
 
+.component.disabled {
+  background-color: hsla(32, 70%, 45%, 1);
+  cursor: not-allowed;
+}
+
 .component.selected {
   background-color: hsla(150, 70%, 45%, 1);
   color: #000;
@@ -36,4 +41,11 @@
 
 .component p {
   max-width: var(--width);
+}
+
+.broken {
+  padding: 5px;
+  backdrop-filter: brightness(.35) blur(3px);
+  pointer-events: none;
+  border-radius: 5px;
 }

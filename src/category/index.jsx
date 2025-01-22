@@ -28,6 +28,7 @@ const Category = ({
               description={component.description}
               imagePath={process.env.PUBLIC_URL + component.imagePath}
               setValue={v => { setComponent(component.id, v); }}
+              disabled={component.disabled}
             ></Component>
           </div>
         )}
