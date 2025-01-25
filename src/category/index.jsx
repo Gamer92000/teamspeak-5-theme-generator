@@ -26,7 +26,7 @@ const Category = ({
               id={component.id}
               name={component.name}
               description={component.description}
-              imagePath={process.env.PUBLIC_URL + component.imagePath}
+              imagePath={component.imagePath}
               setValue={v => { setComponent(component.id, v); }}
               disabled={component.disabled}
             ></Component>
