@@ -50,6 +50,8 @@ const ExportButton = () => {
   const componentValues = useComponents(state => state.componentValues);
 
   const exportTheme = async () => {
+    await document.fonts.load("12px Noto Sans");
+
     const searchParams = new URLSearchParams(window.location.search);
     if (!searchParams.get('selection')) {
       alert("Please select at least one component!");
