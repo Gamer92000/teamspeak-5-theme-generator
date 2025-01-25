@@ -26,7 +26,7 @@ const Category = ({
               id={component.id}
               name={component.name}
               description={component.description}
-              imagePath={component.imagePath}
+              imagePath={import.meta.env.BASE_URL + component.imagePath}
               setValue={v => { setComponent(component.id, v); }}
               disabled={component.disabled}
             ></Component>

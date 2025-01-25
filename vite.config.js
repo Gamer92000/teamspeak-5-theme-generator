@@ -7,5 +7,6 @@ export default defineConfig(() => {
       outDir: 'build',
     },
     plugins: [react()],
+    base: '/teamspeak-5-theme-generator/'
   };
 });

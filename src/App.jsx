@@ -27,7 +27,7 @@ const App = () => {
   const setCategories = useComponents(state => state.setCategories);
 
   useEffect(() => {
-    fetch(`/components.json`)
+    fetch(import.meta.env.BASE_URL + `/components.json`)
       .then(response => response.json())
       .then(data => {
         // eslint-disable-next-line no-sequences

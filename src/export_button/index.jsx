@@ -72,7 +72,7 @@ const ExportButton = () => {
     const packageJsonWithId = packageJson.replaceAll("<id>", sel);
     folder.file("package.json", packageJsonWithId);
     
-    const customPng = await fetch('/logo.png')
+    const customPng = await fetch(import.meta.env.BASE_URL + '/logo.png')
       .then(response => response.blob())
       .then(blob => {
           var reader = new FileReader() ;
@@ -93,7 +93,7 @@ const ExportButton = () => {
       names.push(component.name);
       // fetch the css from the component
       let css_uri = component.css;
-      await fetch(css_uri).then(response => response.text()).then(text => {
+      await fetch(import.meta.env.BASE_URL + css_uri).then(response => response.text()).then(text => {
         customCss += `/* ${component.name} */\n${text}\n\n`;
       }).catch(err => {
         console.error(err);
@@ -104,7 +104,7 @@ const ExportButton = () => {
       }
       // fetch all resources
       await Promise.all(component.resources.map(async resource => {
-        await fetch(resource).then(response => response.blob()).then(blob => {
+        await fetch(import.meta.env.BASE_URL + resource).then(response => response.blob()).then(blob => {
           folder.file(resource.split("/").pop(), blob);
         }).catch(err => {
           console.error(err);
