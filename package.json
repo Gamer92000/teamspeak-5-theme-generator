@@ -16,6 +16,7 @@
     "react-scripts": "5.0.1",
     "superfasthash": "github:mjethani/superfasthash",
     "web-vitals": "^3.5.0",
+    "wordcloud": "^1.2.3",
     "zustand": "^4.4.7"
   },
   "scripts": {
